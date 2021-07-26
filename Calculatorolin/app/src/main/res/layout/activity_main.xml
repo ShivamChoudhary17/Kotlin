@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="@string/enter_number"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edittext_border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button_one"
+                android:text="@string/button_one"
+                android:onClick="operationFunction"
+                style="@style/button_style" />
+            <Button
+                android:id="@+id/button_two"
+                android:text="@string/button_two"
+                android:onClick="operationFunction"
+                style="@style/button_style"/>
+            <Button
+                android:id="@+id/button_three"
+                android:text="@string/button_three"
+                android:onClick="operationFunction"
+                style="@style/button_style"/>
+            <Button
+                android:id="@+id/button_div"
+                android:text="@string/button_div"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button_four"
+                android:text="@string/button_four"
+                android:onClick="operationFunction"
+                style="@style/button_style" />
+            <Button
+                android:id="@+id/button_five"
+                android:text="@string/button_five"
+                android:onClick="operationFunction"
+                style="@style/button_style"/>
+            <Button
+                android:id="@+id/button_six"
+                android:text="@string/button_six"
+                android:onClick="operationFunction"
+                style="@style/button_style" />
+            <Button
+                android:id="@+id/button_plus"
+                android:text="@string/button_add"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button_seven"
+                android:text="@string/button_seven"
+                android:onClick="operationFunction"
+                style="@style/button_style" />
+            <Button
+                android:id="@+id/button_eight"
+                android:text="@string/button_eight"
+                android:onClick="operationFunction"
+                style="@style/button_style"/>
+            <Button
+                android:id="@+id/button_nine"
+                android:text="@string/button_nine"
+                android:onClick="operationFunction"
+                style="@style/button_style"/>
+            <Button
+                android:id="@+id/button_dash"
+                android:text="@string/button_sub"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button_clear"
+                android:text="@string/button_clear"
+                android:onClick="operationFunction"
+                style="@style/button_style" />
+            <Button
+                android:id="@+id/button_zero"
+                android:text="@string/button_zero"
+                android:onClick="operationFunction"
+                style="@style/button_style"/>
+            <Button
+                android:id="@+id/button_dot"
+                android:text="@string/button_dot"
+                android:onClick="operationFunction"
+                style="@style/button_style"/>
+            <Button
+                android:id="@+id/button_equal"
+                android:text="@string/button_equal"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
