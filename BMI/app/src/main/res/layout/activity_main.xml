@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center|top">
+
+    <EditText
+        android:id="@+id/weight_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:hint="@string/weight_kg"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:digits="123456789.0"/>
+
+    <EditText
+        android:id="@+id/height_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:hint="@string/height_m"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textStyle="bold"
+        tools:ignore="DuplicateIds"
+        android:digits="123456789.0"/>
+
+    <Button
+        android:id="@+id/calculate_bmi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/bmi_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-black"
+        tools:text="20"/>
+
+    <ImageView
+        android:id="@+id/bmi_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@drawable/healthy"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/contentdes"/>
+
+</LinearLayout>
